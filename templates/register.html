@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Registration Form</title>
+	<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+	<h1>Online Job Application Form</h1>
+	<form>
+		<fieldset>
+			<legend>
+				Personal Information
+			</legend>
+			<table>
+				<tr>
+					<td><label>First name: </label></td>
+					<td><input type="text" name=""></td>
+					<td><label>Middle name: </label></td>
+					<td><input type="text" name=""></td>
+					<td><label>Last name: </label></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td><label>Father's name: </label></td>
+					<td><input type="text" name=""></td>
+					<td><label>Mother's name: </label></td>
+					<td><input type="text" name=""></td>
+					<td colspan="2" rowspan="2"><img src="{% static 'images/pic.jpeg' %}" alt=""></td>
+				</tr>
+				<tr>
+					<td><label>Current Address: </label></td>
+					<td><textarea cols="30" rows="5"></textarea></td>
+					<td><label>Permanent Address: </label></td>
+					<td><textarea cols="30" rows="5"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="3">Phone numbers</td>
+				</tr>
+				<tr>
+					<td><label>Landline Number: </label></td>
+					<td><input type="text" name=""></td>
+					<td><label>Mobile Number: </label></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td><label>Date Of Birth: </label></td>
+					<td><input type="Date" name=""></td>
+					<td><label>Place Of Birth: </label></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>Select Gender: </label></td>
+					<td><input type="radio" name="gen">Male</td>
+					<td><input type="radio" name="gen">Female</td>
+				</tr>
+				<tr>
+					<td><label>Highest Qualification: </label></td>
+					<td><input type="text" name=""></td>
+					<td><label>Year Of Passing</label></td>
+					<td><input type="Date" name=""></td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>Languages known</label></td>
+					<td><input type="checkbox" name="">Telugu</td>
+					<td><input type="checkbox" name="">Hindi</td>
+					<td><input type="checkbox" name="">English</td>
+				</tr>
+
+				<tr>
+					<td colspan="2"><label>Select Your Hobbies</label></td>
+					<td><input type="checkbox" name="">Eating</td>
+					<td><input type="checkbox" name="">Coding</td>
+					<td><input type="checkbox" name="">Sleeping</td>
+				</tr>
+				<tr>
+					<td><label>About Yourself</label></td>
+					<td><textarea cols="30" rows="6"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Nationality</label></td>
+					<td>
+						<select>
+							<option>Indian</option>
+							<option>American</option>
+							<option>Russian</option>
+							<option>African</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Aadhar Card Number</label></td>
+					<td><input type="text" name=""></td>
+					<td><label>PAN card number</label></td>
+					<td><input type="text" name=""></td>
+					<td></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
